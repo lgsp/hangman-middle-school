@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Hangman Game</h1>
+        <select id="category-select">
+            <option value="numbers">Numbers (0-20)</option>
+            <option value="days">Days of the Week</option>
+            <option value="months">Months</option>
+            <option value="seasons">Seasons</option>
+            <option value="food">Food</option>
+            <option value="drinks">Drinks</option>
+            <option value="sports">Sports</option>
+            <option value="classroom">Classroom Items</option>
+            <option value="videogames">Popular Video Games</option>
+            <option value="anime">Popular Japanese Anime</option>
+        </select>
+        <select id="difficulty-select">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <button id="start-game">Start Game</button>
+        <pre id="hangman"></pre>
+        <div id="word-display"></div>
+        <input type="text" id="guess-input" maxlength="1">
+        <button id="guess-button">Guess</button>
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
